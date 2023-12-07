@@ -1,0 +1,109 @@
+Vertical:
+- Horozontal:
+  - rest/2
+  - Horozontal:
+    - Vertical:
+      
+    - 30
+    - 15
+  - rest/2
+- rest
+
+
+name: terminal
+partition: vertical 
+areas: 
+
+- name: top_space
+  partition: horozontal
+  areas: 
+
+  - name: left_wing
+    size: 
+      width: rest/2
+
+  - name: main
+    partition: horozontal
+    areas: 
+
+    - name: left
+      partition: horozontal
+      size: 
+        width: 15
+      areas: 
+
+      - name: hold_title
+        size: 
+          height: 4 
+      
+      - name: hold_piece
+        size: 
+          height: 8
+      
+      - name: score_board
+        size: 
+          height: 8
+      
+      - name: debug
+        size: 
+          height: rest or fill
+
+    - name: center
+      partition: horozontal
+      size:
+        width: 30
+      areas: 
+
+      - name: title
+        size: 
+          height: 8
+      
+      - name: board
+        size: 
+          height: 40
+
+    - name: right
+      partition: horozontal
+      size: 
+        width: 15
+      areas: 
+
+      - name: next_title
+        size: 
+          height: 4
+      
+      - name: next_piece_spacer_top
+        size: 
+          height: 1
+
+      - name: next_piece_0
+        size: 
+          height: 6
+      
+      - name: next_piece_1
+        size: 
+          height: 6
+      
+      - name: next_piece_2
+        size: 
+          height: 6
+      
+      - name: next_piece_3
+        size: 
+          height: 6
+
+      - name: next_piece_spacer_bot
+        size: 
+          height: 1
+
+      - name: controls
+        size: 
+          height: 18
+
+  - name: right_wing
+    size: 
+      width: rest/2
+  
+- name: bot_space
+  size: 
+    height: rest/2
